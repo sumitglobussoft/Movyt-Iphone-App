@@ -1,0 +1,1066 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Demuxer Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Video Stream </a></h1>
+				<a id="developerHome" href="../index.html">Agilio</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Demuxer Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/actualAudioOffset">&nbsp;&nbsp;&nbsp;&nbsp;- actualAudioOffset</option>
+	
+	<option value="//api/name/actualVideoOffset">&nbsp;&nbsp;&nbsp;&nbsp;- actualVideoOffset</option>
+	
+	<option value="//api/name/audioCodec">&nbsp;&nbsp;&nbsp;&nbsp;- audioCodec</option>
+	
+	<option value="//api/name/audioDuration">&nbsp;&nbsp;&nbsp;&nbsp;- audioDuration</option>
+	
+	<option value="//api/name/audioDurationSeconds">&nbsp;&nbsp;&nbsp;&nbsp;- audioDurationSeconds</option>
+	
+	<option value="//api/name/audioOffset">&nbsp;&nbsp;&nbsp;&nbsp;- audioOffset</option>
+	
+	<option value="//api/name/audioTimeBaseDenominator">&nbsp;&nbsp;&nbsp;&nbsp;- audioTimeBaseDenominator</option>
+	
+	<option value="//api/name/initWithFilename:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFilename:</option>
+	
+	<option value="//api/name/movieDuration">&nbsp;&nbsp;&nbsp;&nbsp;- movieDuration</option>
+	
+	<option value="//api/name/readPacket:">&nbsp;&nbsp;&nbsp;&nbsp;- readPacket:</option>
+	
+	<option value="//api/name/videoCodec">&nbsp;&nbsp;&nbsp;&nbsp;- videoCodec</option>
+	
+	<option value="//api/name/videoDuration">&nbsp;&nbsp;&nbsp;&nbsp;- videoDuration</option>
+	
+	<option value="//api/name/videoDurationSeconds">&nbsp;&nbsp;&nbsp;&nbsp;- videoDurationSeconds</option>
+	
+	<option value="//api/name/videoOffset">&nbsp;&nbsp;&nbsp;&nbsp;- videoOffset</option>
+	
+	<option value="//api/name/videoTimeBaseDenominator">&nbsp;&nbsp;&nbsp;&nbsp;- videoTimeBaseDenominator</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actualAudioOffset">actualAudioOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/actualVideoOffset">actualVideoOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioCodec">audioCodec</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioDuration">audioDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioDurationSeconds">audioDurationSeconds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioOffset">audioOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/audioTimeBaseDenominator">audioTimeBaseDenominator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFilename:">initWithFilename:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/movieDuration">movieDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/readPacket:">readPacket:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/videoCodec">videoCodec</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/videoDuration">videoDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/videoDurationSeconds">videoDurationSeconds</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/videoOffset">videoOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/videoTimeBaseDenominator">videoTimeBaseDenominator</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Demuxer Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Demuxer Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Demuxer.h<br />Demuxer.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Reads audio and video packets from a local mp4 file.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFilename:">&ndash;&nbsp;initWithFilename:</a></code>
+		<span class="tooltip"><p>Create a new Demuxer given the path to a file.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/readPacket:">&ndash;&nbsp;readPacket:</a></code>
+		<span class="tooltip"><p>Reads a packet from the movie.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/videoCodec">&ndash;&nbsp;videoCodec</a></code>
+		<span class="tooltip"><p>The video stream&rsquo;s codec.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioCodec">&ndash;&nbsp;audioCodec</a></code>
+		<span class="tooltip"><p>The audio stream&rsquo;s codec.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actualAudioOffset">&ndash;&nbsp;actualAudioOffset</a></code>
+		<span class="tooltip"><p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/actualVideoOffset">&ndash;&nbsp;actualVideoOffset</a></code>
+		<span class="tooltip"><p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioOffset">&ndash;&nbsp;audioOffset</a></code>
+		<span class="tooltip"><p>The timestamp of the inital audio packet as an absolute value (in the audio stream&rsquo;s time base).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/videoOffset">&ndash;&nbsp;videoOffset</a></code>
+		<span class="tooltip"><p>The timestamp of the inital video packet as an absolute value (in the video stream&rsquo;s time base).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioDuration">&ndash;&nbsp;audioDuration</a></code>
+		<span class="tooltip"><p>The audio stream&rsquo;s duration in the audio stream&rsquo;s own time base.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/videoDuration">&ndash;&nbsp;videoDuration</a></code>
+		<span class="tooltip"><p>The video stream&rsquo;s duration in the video stream&rsquo;s own time base.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioTimeBaseDenominator">&ndash;&nbsp;audioTimeBaseDenominator</a></code>
+		<span class="tooltip"><p>The audio stream&rsquo;s time base denominator.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/videoTimeBaseDenominator">&ndash;&nbsp;videoTimeBaseDenominator</a></code>
+		<span class="tooltip"><p>The video stream&rsquo;s time base denominator.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/audioDurationSeconds">&ndash;&nbsp;audioDurationSeconds</a></code>
+		<span class="tooltip"><p>The audio stream&rsquo;s duration in seconds.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/videoDurationSeconds">&ndash;&nbsp;videoDurationSeconds</a></code>
+		<span class="tooltip"><p>The video stream&rsquo;s duration in seconds.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/movieDuration">&ndash;&nbsp;movieDuration</a></code>
+		<span class="tooltip"><p>The movie&rsquo;s duration in seconds.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/actualAudioOffset" title="actualAudioOffset"></a>
+	<h3 class="subsubtitle method-title">actualAudioOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)actualAudioOffset</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/actualVideoOffset" title="actualVideoOffset"></a>
+	<h3 class="subsubtitle method-title">actualVideoOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)actualVideoOffset</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The timestamp of the inital audio packet in the audio stream&rsquo;s time base.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioCodec" title="audioCodec"></a>
+	<h3 class="subsubtitle method-title">audioCodec</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The audio stream&rsquo;s codec.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AVCodecContext *)audioCodec</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The audio stream&rsquo;s codec.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioDuration" title="audioDuration"></a>
+	<h3 class="subsubtitle method-title">audioDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The audio stream&rsquo;s duration in the audio stream&rsquo;s own time base.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)audioDuration</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The audio stream&rsquo;s duration in the audio stream&rsquo;s own time base.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioDurationSeconds" title="audioDurationSeconds"></a>
+	<h3 class="subsubtitle method-title">audioDurationSeconds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The audio stream&rsquo;s duration in seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)audioDurationSeconds</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The audio stream&rsquo;s duration in seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioOffset" title="audioOffset"></a>
+	<h3 class="subsubtitle method-title">audioOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The timestamp of the inital audio packet as an absolute value (in the audio stream&rsquo;s time base).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)audioOffset</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The timestamp of the inital audio packet as an absolute value (in the audio stream&rsquo;s time base).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/audioTimeBaseDenominator" title="audioTimeBaseDenominator"></a>
+	<h3 class="subsubtitle method-title">audioTimeBaseDenominator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The audio stream&rsquo;s time base denominator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)audioTimeBaseDenominator</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The audio stream&rsquo;s time base denominator.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFilename:" title="initWithFilename:"></a>
+	<h3 class="subsubtitle method-title">initWithFilename:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a new Demuxer given the path to a file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFilename:(NSString *)<em>filename</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>filename</em></dt>
+			<dd><p>The path of the file to &ldquo;demux&rdquo;.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Create a new Demuxer given the path to a file.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/movieDuration" title="movieDuration"></a>
+	<h3 class="subsubtitle method-title">movieDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The movie&rsquo;s duration in seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)movieDuration</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The movie&rsquo;s duration in seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/readPacket:" title="readPacket:"></a>
+	<h3 class="subsubtitle method-title">readPacket:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reads a packet from the movie.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AVPacket *)readPacket:(bool *)<em>isVideo</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>isVideo</em></dt>
+			<dd><p>Used to return whether or not the packet being read is a video packet.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reads a packet from the movie.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/videoCodec" title="videoCodec"></a>
+	<h3 class="subsubtitle method-title">videoCodec</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The video stream&rsquo;s codec.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (AVCodecContext *)videoCodec</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The video stream&rsquo;s codec.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/videoDuration" title="videoDuration"></a>
+	<h3 class="subsubtitle method-title">videoDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The video stream&rsquo;s duration in the video stream&rsquo;s own time base.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)videoDuration</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The video stream&rsquo;s duration in the video stream&rsquo;s own time base.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/videoDurationSeconds" title="videoDurationSeconds"></a>
+	<h3 class="subsubtitle method-title">videoDurationSeconds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The video stream&rsquo;s duration in seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)videoDurationSeconds</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The video stream&rsquo;s duration in seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/videoOffset" title="videoOffset"></a>
+	<h3 class="subsubtitle method-title">videoOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The timestamp of the inital video packet as an absolute value (in the video stream&rsquo;s time base).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)videoOffset</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The timestamp of the inital video packet as an absolute value (in the video stream&rsquo;s time base).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/videoTimeBaseDenominator" title="videoTimeBaseDenominator"></a>
+	<h3 class="subsubtitle method-title">videoTimeBaseDenominator</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The video stream&rsquo;s time base denominator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)videoTimeBaseDenominator</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The video stream&rsquo;s time base denominator.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Demuxer.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Agilio. All rights reserved. (Last updated: 2013-04-26)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
